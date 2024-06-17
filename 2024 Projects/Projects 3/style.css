@@ -1,0 +1,156 @@
+/* Global View */
+
+body {
+    font-family: "Asap", sans-serif;
+    background-color: #ebebeb;
+}
+
+a{        color:white;
+    text-decoration: none;}
+
+.container {
+    min-height: 500px;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding:140px 15px 0px 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.hide-desktop-only {
+    display: none;
+}
+
+.col {
+    background-color: lightseagreen;
+    width: 30%;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+
+.col img {
+    width: 100%;
+    height: auto;
+}
+
+.col p {
+    font-size: 0.875rem;
+    padding: 25px 30px;
+    color: white;
+    line-height: 1.25rem;
+}
+
+.col p::first-line {
+    font-weight: 700;
+}
+
+
+.header-container{
+
+    background-color: #3D3D3D;
+    padding: 40px 15px;
+    position:fixed;
+    width: 100%;
+}
+
+header
+{  
+    max-width: 1024px;
+    margin: 0 auto;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.bold
+{
+    font-weight: 700;
+}
+
+nav a
+{
+    padding: 10px 25px;
+    margin-left: 15px;
+    border: 1px solid white;
+    color: white;
+    text-decoration: none;
+}
+.mobWrapper
+{
+    display:none;
+} 
+
+
+
+
+
+
+/* Tablet View */
+@media (max-width:768px) {
+
+    .header-container{
+        padding: 0 5px;
+    }
+    .burgerMenu{margin: 30px 0;}
+
+    .logo
+    {
+        padding: 40px 0;
+    }
+    
+    .col {
+        width: 45%;
+    }
+
+    nav
+    {
+        display: none;
+    }
+
+    .hide-desktop-only {
+        display: block;
+    }
+
+    .mobWrapper{
+        display:block;
+        padding-right: 30px;
+        align-items: center;
+    }
+
+    .navbutton{
+        display:block;
+        background-color: coral;
+        padding: 15px 30px;
+        margin-left: -70px;
+        text-align:center;
+        
+    }
+    
+    .dropDown
+    {
+        display:none;
+        position: absolute ;
+        margin-top: -15px;
+    }
+}
+
+/* Mobile View */
+@media (max-width:660px) {
+    .col {
+        width: 99%;
+    }
+
+    .hide-mobile {
+        display: none;
+    }
+    .header-container{ position:relative; margin-bottom: -100px;}
+    
+    .logo{
+        min-height: 50px;
+    }
+}
+
+
